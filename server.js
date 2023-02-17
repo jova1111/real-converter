@@ -1,13 +1,17 @@
-const express = require('express');
-const compression = require('compression');
-const port = process.env.PORT || 8080;
-const app = express();
+const express = require('express')
+const serveStatic = require('serve-static')
+const path = require('path')
 
-app.use(express.static(__dirname + "/dist/"));
-app.use(compression());
-app.get(/.*/, function(request, response) {
-    response.sendfile(__dirname + "/dist/index.html");
-});
-app.listen(port);
+const app = express()
 
-console.log('Server started....');
+//here we are configuring dist to serve app files
+app.use('/', serveStatic(path.join(__dirname, '/dist')))
+
+// this * route is to serve project on different page routes except root `/`
+app.get(/.*/, function (req, res) {
+	res.sendFile(path.join(__dirname, '/dist/index.html'))
+})
+
+const port = process.env.PORT || 8080
+app.listen(port)
+console.log(`app is listening on port: ${port}`)
