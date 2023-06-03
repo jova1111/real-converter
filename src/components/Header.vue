@@ -7,6 +7,7 @@
     <div class="navbar-nav mr-auto">
       <router-link to="/" class="nav-item nav-link">Валута</router-link>
       <router-link to="/time" class="nav-item nav-link">Време</router-link>
+      <router-link to="/about" class="nav-item nav-link">О Правом конвертору</router-link>
     </div>
   </div>
 </nav>

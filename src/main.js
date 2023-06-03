@@ -3,6 +3,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import CurrencyConverterPage from '@/pages/CurrencyConverterPage.vue';
 import TimeConverterPage from '@/pages/TimeConverterPage.vue';
+import AboutPage from '@/pages/AboutPage.vue';
 
 const routes = [
   {
@@ -12,6 +13,10 @@ const routes = [
   {
     path: '/time',
     component: TimeConverterPage
+  },
+  {
+    path: '/about',
+    component: AboutPage
   }
 ]
 

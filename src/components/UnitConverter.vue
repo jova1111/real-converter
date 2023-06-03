@@ -28,7 +28,12 @@
         </option>
       </select>
     </div>
-    <button id="switchConversionButton" type="button" class="btn btn-secondary" @click="switchUnits">
+    <button
+      id="switchConversionButton"
+      type="button"
+      class="btn btn-secondary"
+      @click="switchUnits"
+    >
       Обрни конверзију
     </button>
   </div>
@@ -47,7 +52,7 @@ export default {
 
   data() {
     return {
-      leftValue: '',
+      leftValue: "",
       leftUnitId: -1,
       rightUnitId: -1,
     };
