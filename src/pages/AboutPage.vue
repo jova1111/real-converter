@@ -36,7 +36,7 @@
     <div id="about">
       <i>Направио Јоца као поклон Боци за тежак пораз у другом циклусу Слагалице.
       Циклус је почео у новембру прошле године и трајао дугих и мучних 6 месеци, а завршен је резултатом 10:6 у Боцину корист.</i>
-      <img id="funny-img" src="@/assets/boca_madjija_jovo_potisten.png" />
+      <img id="funny-img" src="@/assets/boca_madjija_jovo_potisten.jpg" />
     </div>
 
     <div id="place-and-year">Нови Сад, 2023.</div>
@@ -76,12 +76,12 @@ li {
 }
 
 #place-and-year {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 15px;
 }
 
 #funny-img {
-  margin: 30px;
+  margin-top: 30px;
   width: 75%;
   height: auto;
 }
